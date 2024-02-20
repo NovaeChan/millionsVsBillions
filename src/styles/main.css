@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('./variables.css');
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: "Fredoka", sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: var(--secondary-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    justify-content: center;
+    padding: 3%;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 2%;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 3% 2%;
+    }
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 0%;
+    padding: 3% 2%;
+    text-align: center;
+    span {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+    }
+
+    .main-title-word {
+        font-size: 1.7rem;
+        text-decoration: underline;
+    }
+}
+
+.main-desc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3% 2%;
+
+    span {
+        margin-bottom: 5%;
+    }
+}
