@@ -1,10 +1,12 @@
 import '../styles/main.css'
 
-import moneyBlock from '../assets/money-block.png';
 import { useEffect } from 'react';
 
 export default function Home() {
 
+    //TODO : Deal with case where active is null
+    //Add scale to show what is a million when showing Bernard Arnaud wealth
+    //Add trivia to explain how stupid it is. Like how long someone at minimum wage would need to work to get this amount of wealth
 
     useEffect(() => {
         let currentIndex = 0;
@@ -30,7 +32,8 @@ export default function Home() {
             active.classList.remove('active');
             x.classList.add('active');
             x.scrollIntoView({
-                behavior: 'smooth'
+                behavior: 'smooth',
+                alignToTop: false,
               });
         }
     }, [])
@@ -47,33 +50,38 @@ export default function Home() {
                     <span>Avec l&apos;augmentation des inégalités d&apos;années en années, il est temps de rappeler le patrimoine en euros de Français les plus riches comparé à celui du français moyen.</span>
                 </div>
                 <div className='main-desc'>
-                    <p>Chaque <img src={moneyBlock}></img> correspond à 1000€.</p>
+                    <p>Chaque pixel bleu correspond à 1000€.</p>
                     <p>Pour défiler chaque catégorie, il suffit de cliquer sur la flèche qui va apparaître</p>
                 </div>
-                <div>
+                <div className='wrapper'>
                     <div className='demo 10poorest active'>
                         <span>Les 10% les plus pauvres possèdent au plus 4400€ </span>
                         <div className='money-block tenPoorest'></div>
                     </div>
-                    <div className='demo median'>
+                    <div className='demo'>
                         <span>177 200€ le patrimoine médian en France</span>
                         <div className='money-block median'></div>
                     </div>
-                    <div className='demo tenRichest'>
+                    <div className='demo'>
                         <span>Les 10% les plus riches de France (716 300€)</span>
-                        <div className='money-block tenrichest'></div>
+                        <div className='money-block tenRichest'></div>
                     </div>
-                    <div className='demo fiveRichest'>
+                    <div className='demo'>
                         <span>On arrive aux millionaires.<br/> Les 5% les plus riches de France (1 034 600€)</span>
                         <div className='money-block fiveRichest'></div>
                     </div>
-                    <div className='demo oneRichest'>
+                    <div className='demo'>
                         <span>Les 1% les plus riches de France (2 239 200€)</span>
                         <div className='money-block oneRichest'></div>
                     </div>
-                    <div className='demo milliard'>
-                        <span>Voici ce que représente une richesse d&apos;un milliard d&apos;euros</span>
+                    <div className='demo'>
+                        <span>Voici ce que représente un milliard d&apos;euros</span>
                         <div className='money-block oneBillion'></div>
+                        
+                    </div>
+                    <div className='demo'>
+                        <span>Voici la richesse de Bernard Arnault 204,56 milliards d&apos;euros</span>
+                        <div className='money-block bernard'><div className='demo information'><span>Un peu de patience, on y arrive</span></div></div>
                     </div>
                 </div>
                 

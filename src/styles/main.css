@@ -74,6 +74,17 @@ main {
     }
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5%;
+
+    div {
+        margin-bottom: 5%;
+    }
+}
+
 .money-block {
     width: var(--block-size);
     height: var(--block-size);
@@ -82,34 +93,52 @@ main {
     padding: 0px;
 }
 
-.tenPoorest { 
+.tenPoorest {
+    flex: 0 0 auto;
     width: calc(var(--block-size)*2.1);
     height: calc(var(--block-size)*2.1);
 }
 
 .median {
+    flex: 0 0 auto;
     width: calc(var(--block-size)*13);
     height: calc(var(--block-size)*13);
 }
 
-.tenrichest {
+.tenRichest {
+    flex: 0 0 auto;
     width: calc(var(--block-size)*27);
     height: calc(var(--block-size)*27);
 }
 
 .fiveRichest {
+    flex: 0 0 auto;
     width: calc(var(--block-size)*32.1);
     height: calc(var(--block-size)*32.1);
 }
 
 .oneRichest {
-    width: calc(var(--block-size)*34.5);
-    height: calc(var(--block-size)*64.9);
+    flex: 0 0 auto;
+    width: calc(var(--block-size)*47.3);
+    height: calc(var(--block-size)*47.3);
 }
 
 .oneBillion {
+    flex: 0 0 auto;
     width: 345px;
-    height: calc(var(--block-size)*289855.1);
+    height: calc(var(--block-size)*2898.55);
+}
+
+.information {
+    position: absolute;
+    top: 50%;
+
+}
+
+.bernard {
+    width: 345px;
+    height: 592927.53px;
+    position: relative;
 }
 
 .arrowDown {
