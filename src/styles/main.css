@@ -31,6 +31,7 @@ main {
         justify-content: center;
         text-align: center;
         padding: 3% 2%;
+        align-items: center;
     }
 }
 
@@ -57,12 +58,75 @@ main {
 }
 
 .main-desc {
-    display: flex;
+    display: block;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 3% 2%;
 
     span {
         margin-bottom: 5%;
     }
+
+    img {
+        position: relative;
+        top: 2px;
+    }
+}
+
+.money-block {
+    width: var(--block-size);
+    height: var(--block-size);
+    margin: 5px;
+    background-color: #2669fa;
+    padding: 0px;
+}
+
+.tenPoorest { 
+    width: calc(var(--block-size)*2.1);
+    height: calc(var(--block-size)*2.1);
+}
+
+.median {
+    width: calc(var(--block-size)*13);
+    height: calc(var(--block-size)*13);
+}
+
+.tenrichest {
+    width: calc(var(--block-size)*27);
+    height: calc(var(--block-size)*27);
+}
+
+.fiveRichest {
+    width: calc(var(--block-size)*32.1);
+    height: calc(var(--block-size)*32.1);
+}
+
+.oneRichest {
+    width: calc(var(--block-size)*34.5);
+    height: calc(var(--block-size)*64.9);
+}
+
+.oneBillion {
+    width: 345px;
+    height: calc(var(--block-size)*289855.1);
+}
+
+.arrowDown {
+    padding: 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--main-text-color);
+    border-radius: 45%;
+    bottom: 15px;
+    right: 15px;
+}
+
+.arrowDown:hover {
+    cursor: pointer;
+    background-color: rgba(27, 27, 27, 0.5);
 }
