@@ -133,7 +133,7 @@ export default function Home() {
                             
                         </div>
                     </div>
-                    <div className='demoWrapper'>
+                    <div className='demo demoWrapper'>
                         <span>Ceci ne représente que la richesse de l&apos;homme le plus riche de France et du monde. Imaginez ce que pourrait représenter les 100 personnes les plus riches de France</span>
                     </div>
                     <div className='demoWrapper'>
