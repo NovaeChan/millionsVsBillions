@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Novaechan.github.io/visualisationRichesseFrance/",
+  "homepage": "https://novaechan.github.io/visualisationRichesseFrance/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
