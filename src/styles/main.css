@@ -183,6 +183,22 @@ main {
     position: relative;
 }
 
+.ruler {
+    background-image: url('../assets/ruler.svg');
+    background-repeat: repeat-y;
+    background-position: 0px 0px;
+}
+
+.ruler::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: 1;
+    background: url('../assets/ruler.svg');
+    transform: rotate(90deg);
+}
+
 .educationBlock {
     width: 300px;
     height: 196667px;

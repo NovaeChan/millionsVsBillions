@@ -121,7 +121,7 @@ export default function Home() {
                     </div>
                     <div className='demo demoWrapper'>
                         <div><span>Voici la richesse de Bernard Arnault 221,1 milliards d&apos;euros</span></div>
-                        <div className='money-block bernard'>
+                        <div className='money-block bernard ruler'>
                             <div className='demo information-patience'><span>On vient d&apos;atteindre seulement 15% de sa fortune</span></div>
                             <div className='demo information-reminder'><span>Pour rappel, voici ce que représente <br />un million d&apos;euros</span></div>
                             <div className='money-block fiveRichest reminderBlock'></div>
