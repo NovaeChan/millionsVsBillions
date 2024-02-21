@@ -23,14 +23,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3% 2%;
 
     div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 3% 2%;
         align-items: center;
     }
 }
@@ -63,7 +61,7 @@ main {
     align-items: center;
     text-align: center;
     padding: 3% 2%;
-
+    margin-bottom: 5%;
     span {
         margin-bottom: 5%;
     }
@@ -85,10 +83,15 @@ main {
     }
 }
 
+.demoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .money-block {
     width: var(--block-size);
     height: var(--block-size);
-    margin: 5px;
     background-color: #2669fa;
     padding: 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -228,4 +231,11 @@ main {
 .arrow-up:hover {
     cursor: pointer;
     background-color: rgba(27, 27, 27, 0.5);
+}
+
+.counter { 
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
 }
