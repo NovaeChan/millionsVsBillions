@@ -103,6 +103,14 @@ export default function Home() {
                     <div className='demo'>
                         <span>Ceci ne représente que la richesse de l&apos;homme le plus riche de France et du monde. Imaginez ce que pourrait représenter les 100 personnes les plus riches de France</span>
                     </div>
+                    <div className='demo'>
+                        <h3>Sources :</h3>
+                        <ul>
+                            <li>Observatoire des inégalités</li>
+                            <li>Projet de loi de finances 2024</li>
+                            
+                        </ul>
+                    </div>
                 </div>
                 <div className='wrapper-arrow'>
                     <div className='arrow arrow-up' id='scrollUpArrow'><a href='#'>&#8593;</a></div>
