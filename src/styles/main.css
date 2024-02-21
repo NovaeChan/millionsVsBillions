@@ -128,6 +128,12 @@ main {
     flex: 0 0 auto;
     width: 345px;
     height: calc(var(--block-size)*2898.55);
+    position: relative;
+}
+
+.oneBillion-end {
+    position: absolute;
+    bottom: 0px;
 }
 
 .information-patience {
@@ -155,6 +161,17 @@ main {
 .information-budgetEduc {
     position: absolute;
     top: 60%;
+}
+
+.educationBlock {
+    position: absolute;
+    top: 60.01%;
+    background-color: brown;
+}
+
+.educationBlock-end{
+    position: absolute;
+    bottom: 0px;
 }
 
 .bernard {
