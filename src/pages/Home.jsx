@@ -4,8 +4,7 @@ import { useEffect } from 'react';
 
 export default function Home() {
 
-    //TODO : Deal with case where active is null
-    //Add scale to show what is a million when showing Bernard Arnaud wealth
+    //Add scale to show what is a million when showing Bernard Arnault wealth
     //Add trivia to explain how stupid it is. Like how long someone at minimum wage would need to work to get this amount of wealth
 
     useEffect(() => {
@@ -15,7 +14,8 @@ export default function Home() {
         for(let i = 0; i < sections.length; i++){
             sections[i].setAttribute('data-id', i);
         }
-        const buttonDown = document.querySelector('.arrowDown'); 
+        const buttonDown = document.querySelector('.arrow-down'); 
+        const buttonUp = document.querySelector('.arrow-up');
 
         buttonDown.addEventListener('click', () => {
             currentIndex++;
@@ -25,8 +25,17 @@ export default function Home() {
             return indexScroll(currentIndex);
         });
 
+        buttonUp.addEventListener('click', () => {
+            currentIndex--;
+            if(currentIndex < 0){
+                currentIndex = sections.length-1;
+            }
+            return indexScroll(currentIndex);
+        })
+
         function indexScroll(idx){
             let active = document.querySelector('.active');
+            if(!active) document.querySelector('.10poorest');
             let x = sections[idx];
             console.log(x);
             active.classList.remove('active');
@@ -80,12 +89,25 @@ export default function Home() {
                         
                     </div>
                     <div className='demo'>
-                        <span>Voici la richesse de Bernard Arnault 204,56 milliards d&apos;euros</span>
-                        <div className='money-block bernard'><div className='demo information'><span>Un peu de patience, on y arrive</span></div></div>
+                        <span>Voici la richesse de Bernard Arnault 221,1 milliards d&apos;euros</span>
+                        <div className='money-block bernard'>
+                            <div className='demo information-patience'><span>Un peu de patience, on y arrive</span></div>
+                            <div className='demo information-reminder'><span>Pour rappel, voici ce que représente <br />un million d&apos;euros</span></div>
+                            <div className='money-block fiveRichest reminderBlock'></div>
+                            <div className='demo information-SMIC'><span>Il faudrait 12 millions d&apos;années pour un salarié au SMIC pour espérer gagner autant</span></div>
+                            <div className='demo information-budgetEduc'><span>Le budget de l&apos;éducation nationale comparé à la fortune de Bernard Arnault</span></div>
+                            <div className='money-block reminderBlock educationBlock'></div>
+                            <div className='demo educationBlock-end'></div>
+                        </div>
+                    </div>
+                    <div className='demo'>
+                        <span>Ceci ne représente que la richesse de l&apos;homme le plus riche de France et du monde. Imaginez ce que pourrait représenter les 100 personnes les plus riches de France</span>
                     </div>
                 </div>
-                
-                <div className='arrowDown' id="scrollDownArrow"><a href='#/'>&#8595;</a></div>
+                <div className='wrapper-arrow'>
+                    <div className='arrow arrow-up' id='scrollUpArrow'><a href='#'>&#8593;</a></div>
+                    <div className='arrow arrow-down' id="scrollDownArrow"><a href='#/'>&#8595;</a></div>
+                </div>
             </main>
         </>
     )
