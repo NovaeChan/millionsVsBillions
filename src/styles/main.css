@@ -148,11 +148,12 @@ main {
 .information-reminder {
     position: absolute;
     top: 30%;
+    flex-wrap: nowrap;
+    height: 350px;
+    gap: 30px;
 }
 
 .reminderBlock {
-    position: absolute;
-    top: 30.01%;
     background-color: brown;
 }
 
@@ -170,6 +171,15 @@ main {
     position: absolute;
     top: 60.01%;
     background-color: brown;
+    /* width: 300px;
+    height: 196667px; */
+    width: 250px;
+    height: 236000px;
+
+    &.info {
+        padding: 0px;
+        margin-left: 20%;
+    }
 }
 
 .educationBlock-end{
@@ -199,10 +209,7 @@ main {
     transform: rotate(90deg);
 }
 
-.educationBlock {
-    width: 300px;
-    height: 196667px;
-}
+
 
 .wrapper-arrow {
     padding: 0px;
@@ -253,7 +260,13 @@ main {
     display: block;
     position: fixed;
     top: 10px;
-    left: 10px;
+    left: 50%;
+    /* right: 50%; */
     z-index: 100;
     overflow: visible;
+}
+
+.info {
+    padding-left:  25%;
+    padding-right: 5%;
 }

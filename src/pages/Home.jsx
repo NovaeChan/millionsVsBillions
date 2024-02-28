@@ -40,7 +40,7 @@ export default function Home() {
         function indexScroll(idx){
             
             let active = document.querySelector('.active');
-            if(active == undefined) document.querySelector('.tenPoorestBlock').add('active');
+            // if(active == undefined) document.querySelector('.tenPoorestBlock').add('active');
             let x = sections[idx];
 
             active.classList.remove('active');
@@ -59,7 +59,7 @@ export default function Home() {
 
             $("html, body").animate({
                 scrollTop: offset,
-            }, 4000);
+            }, "slow");
         }
 
         function updateCounter() { 
@@ -122,12 +122,16 @@ export default function Home() {
                     <div className='demo demoWrapper'>
                         <div><span>Voici la richesse de Bernard Arnault 221,1 milliards d&apos;euros</span></div>
                         <div className='money-block bernard ruler'>
-                            <div className='demo information-patience'><span>On vient d&apos;atteindre seulement 15% de sa fortune</span></div>
-                            <div className='demo information-reminder'><span>Pour rappel, voici ce que représente <br />un million d&apos;euros</span></div>
-                            <div className='money-block fiveRichest reminderBlock'></div>
-                            <div className='demo information-SMIC'><span>Il faudrait 12 millions d&apos;années pour un salarié au SMIC pour espérer gagner autant</span></div>
-                            <div className='demo information-budgetEduc'><span>Le budget de l&apos;éducation nationale comparé à la fortune de Bernard Arnault</span></div>
-                            <div className='money-block educationBlock'>
+                            <div className='demo info information-patience'><span>On vient d&apos;atteindre seulement 15% de sa fortune</span></div>
+                            <div className='demo info information-reminder'>
+                                <p>Pour rappel, voici ce que représente <br />un million d&apos;euros</p>
+                                <div className='money-block fiveRichest reminderBlock'></div>
+                            </div>
+                            <div className='demo information-SMIC info'><span>Il faudrait 12 millions d&apos;années pour un salarié au SMIC pour espérer gagner autant</span></div>
+                            <div className='demo information-budgetEduc info'>
+                                <span>Le budget de l&apos;éducation nationale comparé à la fortune de Bernard Arnault</span>
+                            </div>
+                            <div className='money-block educationBlock info'>
                                 <div className='demo educationBlock-end'></div>
                             </div>
                             
