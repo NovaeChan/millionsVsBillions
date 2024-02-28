@@ -9,7 +9,7 @@ export default function Home() {
 
     useEffect(() => {
         let currentIndex = 0;
-        const sections = document.querySelectorAll('.demo');
+        const sections = document.querySelectorAll('.block');
 
         for(let i = 0; i < sections.length; i++){
             sections[i].setAttribute('data-id', i);
@@ -59,7 +59,7 @@ export default function Home() {
 
             $("html, body").animate({
                 scrollTop: offset,
-            }, "slow");
+            }, 3000);
         }
 
         function updateCounter() { 
@@ -93,54 +93,54 @@ export default function Home() {
                 </div>
                 <div className='wrapper'>
                     <div className='counter'></div>
-                    <div className='demo demoWrapper tenPoorestBlock active'>
+                    <div className='block blockWrapper tenPoorestBlock active'>
                         <div><span>Les 10% les plus pauvres possèdent au plus 4400€ </span></div>
                         <div className='money-block tenPoorest'></div>
                     </div>
-                    <div className='demoWrapper'>
+                    <div className='blockWrapper'>
                         <div><span>177 200€ le patrimoine médian en France</span></div>
                         <div className='money-block median'></div>
                     </div>
-                    <div className='demoWrapper'>
+                    <div className='blockWrapper'>
                         <div><span>Les 10% les plus riches de France (716 300€)</span></div>
                         <div className='money-block tenRichest'></div>
                     </div>
-                    <div className='demoWrapper'>
+                    <div className='blockWrapper'>
                         <div><span>On arrive aux millionaires.<br/> Les 5% les plus riches de France (1 034 600€)</span></div>
                         <div className='money-block fiveRichest'></div>
                     </div>
-                    <div className='demo demoWrapper'>
+                    <div className='block blockWrapper'>
                         <div><span>Les 1% les plus riches de France (2 239 200€)</span></div>
                         <div className='money-block oneRichest'></div>
                     </div>
-                    <div className='demo demoWrapper'>
+                    <div className='block blockWrapper'>
                         <div><span>Voici ce que représente un milliard d&apos;euros</span></div>
-                        <div className='money-block oneBillion'><div className='demo oneBillion-end'></div></div>
+                        <div className='money-block oneBillion'><div className='block oneBillion-end'></div></div>
                         
                         
                     </div>
-                    <div className='demo demoWrapper'>
+                    <div className='block blockWrapper'>
                         <div><span>Voici la richesse de Bernard Arnault 221,1 milliards d&apos;euros</span></div>
                         <div className='money-block bernard ruler'>
-                            <div className='demo info information-patience'><span>On vient d&apos;atteindre seulement 15% de sa fortune</span></div>
-                            <div className='demo info information-reminder'>
+                            <div className='block info information-patience'><span>On vient d&apos;atteindre seulement 15% de sa fortune</span></div>
+                            <div className='block info information-reminder'>
                                 <p>Pour rappel, voici ce que représente <br />un million d&apos;euros</p>
                                 <div className='money-block fiveRichest reminderBlock'></div>
                             </div>
-                            <div className='demo information-SMIC info'><span>Il faudrait 12 millions d&apos;années pour un salarié au SMIC pour espérer gagner autant</span></div>
-                            <div className='demo information-budgetEduc info'>
+                            <div className='block information-SMIC info'><span>Il faudrait 12 millions d&apos;années pour un salarié au SMIC pour espérer gagner autant</span></div>
+                            <div className='block information-budgetEduc info'>
                                 <span>Le budget de l&apos;éducation nationale comparé à la fortune de Bernard Arnault</span>
                             </div>
                             <div className='money-block educationBlock info'>
-                                <div className='demo educationBlock-end'></div>
+                                <div className='block educationBlock-end'></div>
                             </div>
                             
                         </div>
                     </div>
-                    <div className='demo demoWrapper'>
+                    <div className='block blockWrapper'>
                         <span>Ceci ne représente que la richesse de l&apos;homme le plus riche de France et du monde. Imaginez ce que pourrait représenter les 100 personnes les plus riches de France</span>
                     </div>
-                    <div className='demoWrapper'>
+                    <div className='blockWrapper'>
                         <h3>Sources :</h3>
                         <ul>
                             <li>Observatoire des inégalités</li>
